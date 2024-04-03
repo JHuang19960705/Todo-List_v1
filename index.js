@@ -1,7 +1,9 @@
 // 引入所需模組
 const express = require('express'); // 引入 Express 框架
 const mysql = require('mysql'); // 引入 MySQL 模組
+const path = require('path'); // 引入 path 模組
 const cors = require('cors'); // 引入 cors 模組
+
 
 // 引入 dotenv 模組並讀取 .env 檔案中的環境變數
 require('dotenv').config(); 
