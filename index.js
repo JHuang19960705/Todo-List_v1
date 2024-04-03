@@ -32,6 +32,9 @@ app.use(cors()); // 使用 CORS 中間件
 
 // 設置靜態資源路徑，使 Express 能夠提供 public 資料夾中的檔案
 app.use(express.static('public'));
+// 設置靜態資源路徑，使 Express 能夠提供 CSS 和 JavaScript 檔案
+app.use('/styles', express.static(path.join(__dirname, 'public/styles')));
+app.use('/scripts', express.static(path.join(__dirname, 'public/scripts')));
 
 // 使用 app.get('/') 路由來直接渲染 HTML 檔案
 app.get('/', (req, res) => {
