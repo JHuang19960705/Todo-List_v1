@@ -6,7 +6,7 @@ const editTodoButton = document.querySelector(".js-edit-button");
 const deleteTodoButton = document.querySelector(".js-delete-button");
 
 // 後端URL
-const URL = "https://todo-list-beta-topaz.vercel.app/todoList"
+const URL = "https://todo-list-v1-three.vercel.app"
 
 // 事件監聽器註冊
 addTodoElement.addEventListener("click", enterAddTodoFn);
